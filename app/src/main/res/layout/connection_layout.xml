@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/download">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/network_lobby"
+        android:textColor="@color/colorWhite"
+        android:textSize="40sp"
+        android:textAlignment="center"
+        android:id="@+id/network_textview"/>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_below="@id/network_textview"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/button_layout"
+        android:visibility="gone"/>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress_bar"
+        android:minHeight="@dimen/activity_horizontal_margin"
+        android:minWidth="@dimen/activity_vertical_margin"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_below="@id/progress_bar"
+        android:id="@+id/progress_textview"
+        android:textColor="@color/colorWhite"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/button_layout"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/note_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/note"
+            android:textSize="14sp"
+            android:textColor="@color/colorWhite"
+            android:textAlignment="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorWhite"
+                android:id="@+id/discovery"
+                android:text="@string/go_discoverable"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:layout_weight="1"
+                android:id="@+id/search"
+                android:text="@string/search_devices"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

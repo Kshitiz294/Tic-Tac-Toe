@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="64dp"
+    android:background="@drawable/download"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/new_game"
+        android:text="@string/new_game"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorWhite"
+        android:layout_marginBottom="10dp"
+        android:onClick="newGame"/>
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        //First Row
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            //First Column (R1C1)
+            <Button
+                android:id="@+id/topLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:width="100dp"
+                android:height="100dp"
+                android:layout_margin="5dp"
+                android:background="@color/colorWhite" />
+
+            //Second Column (R1C2)
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:width="100dp"
+                android:height="100dp"
+                android:layout_margin="5dp"
+                android:background="@color/colorWhite" />
+
+            //Third Column (R1C3)
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:width="100dp"
+                android:height="100dp"
+                android:layout_margin="5dp"
+                android:background="@color/colorWhite" />
+        </TableRow>
+
+        //Second Row
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            //First Column (R2C1)
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:width="100dp"
+                android:height="100dp"
+                android:layout_margin="5dp"
+                android:background="@color/colorWhite" />
+
+            //Second Column (R2C2)
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:width="100dp"
+                android:height="100dp"
+                android:layout_margin="5dp"
+                android:background="@color/colorWhite" />
+
+            //Third Column (R2C3)
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:width="100dp"
+                android:height="100dp"
+                android:layout_margin="5dp"
+                android:background="@color/colorWhite" />
+        </TableRow>
+
+        //Third Row
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            //First Column (R3C1)
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:width="100dp"
+                android:height="100dp"
+                android:layout_margin="5dp"
+                android:background="@color/colorWhite" />
+
+            //Second Column (R3C2)
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:width="100dp"
+                android:height="100dp"
+                android:layout_margin="5dp"
+                android:background="@color/colorWhite" />
+
+            //Third Column (R3C3)
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:width="100dp"
+                android:height="100dp"
+                android:layout_margin="5dp"
+                android:background="@color/colorWhite" />
+        </TableRow>
+    </TableLayout>
+
+    //Textview for display the turn
+    <TextView
+        android:id="@+id/nextTurn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@color/colorWhite"
+        android:text="X's Turn" />
+</LinearLayout>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">BluetoothPractice</string>
+    <string name="action_settings">Show Paired Devices</string>
+    <string name="go_discoverable">Go Discoverable</string>
+    <string name="search_devices">Search Devices</string>
+    <string name="message">Message will be displayed here</string>
+    <string name="type_message_">Type Message Here</string>
+    <string name="send">Send</string>
+    <string name="title_activity_options">OptionsActivity</string>
+    <string name="over_bluetooth">Over Bluetooth</string>
+    <string name="same_device">Same Device</string>
+    <string name="title_activity_single_player">SinglePlayerActivity</string>
+    <string name="new_game">NEW GAME</string>
+    <string name="tic_tac_toe">TIC-TAC-TOE</string>
+    <string name="multiplayer">Multiplayer</string>
+    <string name="note">Note: Host Device always gets first turn</string>
+    <string name="network_lobby">Network Lobby</string>
+</resources>
